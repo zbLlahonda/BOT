@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("'")
+var prefix = ("//")
 
 bot.on('ready', function() {
     bot.user.setGame(" zbl <3 ");
@@ -40,7 +40,7 @@ bot.on('message',message => {
         if(!kickMember) {
             return message.reply("Impossible ?")
         }
-        if(!message.guild.member(bot.user).hasPermission("kICK_MEMBERS")) {
+        if(!message.guild.member(bot.user).hasPermission("KICK_MEMBERS")) {
             return message.reply("Don't access").catch(console.error);
         }
 
@@ -64,7 +64,6 @@ if (command === "ban") {
 
     }).catch(console.error)   
 }})
-
 
 
 
