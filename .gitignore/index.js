@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("zbl>")
+var prefix = ("'")
 
 bot.on('ready', function() {
     bot.user.setGame(" zbl <3 ");
     console.log("Connectedç");
 });
 
-bot.login(process.env.NDgwMjE3NzM2OTY2OTYzMjEy.Dllcvw.buu38b_Z3XnLNu6CasbNWi-wMLc);
+bot.login(process.env.NDgwMjE3NzM2OTY2OTYzMjEy.Dllfag.Nbk355gB8xwsBQZbR_rLKOl3eKE);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
@@ -60,7 +60,12 @@ if (command === "ban") {
     member.ban().then(member => {
         message.reply(`${member.user.username} a été banni avec succès.`).catch(console.error);
         message.guild.channels.find("name", "logs-serveur").send(`**${member.user.username}** a été banni du discord par **${message.author.username}**`)
+        
 
     }).catch(console.error)   
 }})
+
+
+
+
 
