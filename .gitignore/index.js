@@ -6,7 +6,7 @@ var prefix = ("//")
 bot.on('ready', function() {
     bot.user.setGame(" zbl <3 ");
     console.log("Connectedç");
-});
+}
 
 bot.login(process.env.NDgwMjE3NzM2OTY2OTYzMjEy.Dllfag.Nbk355gB8xwsBQZbR_rLKOl3eKE);
 
@@ -19,7 +19,7 @@ bot.on('message', message => {
         message.reply("Allez ntm");
         console.log("Commande Salut effectué");
     }
-});
+
 
 bot.login(config.token);
 
